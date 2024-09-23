@@ -28,6 +28,16 @@ CREATE TABLE spotify (
     most_played_on VARCHAR(50)
 );
 
+
+load data infile 
+'D:/spotify.csv'
+into table  spotify
+fields terminated by ','
+enclosed by '"'
+lines terminated by '\n'
+ignore 1 rows
+
+    
 select * from spotify ;
 
 ----15 Practice Questions------
